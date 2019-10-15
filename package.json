@@ -1,0 +1,63 @@
+{
+  "name": "klinev",
+  "version": "1.0.0",
+  "description": "personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "webpack-dev-server --mode development --open",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IggyStooges/klinev.git"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ],
+  "keywords": [
+    "linev",
+    "teacher",
+    "html",
+    "pug",
+    "scss",
+    "webpack"
+  ],
+  "author": "Lobasov DA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IggyStooges/klinev/issues"
+  },
+  "homepage": "https://github.com/IggyStooges/klinev#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.6.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "script-loader": "^0.7.2",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "inputmask": "^4.0.9",
+    "jquery": "^3.4.1"
+  }
+}

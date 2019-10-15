@@ -1,0 +1,66 @@
+@media (min-width: 320px) and (max-width: 1024px) {
+  .menu {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    display: none;
+    color: $black;
+    width: 314px;
+    box-sizing: border-box;
+    padding: 60px 30px 300px 25px;
+    background-color: $white;
+  }
+
+  .menu--open {
+    display: block;
+  }
+
+  .menu__close {
+    @include button-reset;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/close-black.png");
+    background-repeat: no-repeat;
+  }
+
+  .menu__whatsapp {
+    @include button-reset;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+    padding: 11px 0 11px 30px;
+    box-sizing: border-box;
+    background-color: $dark-gray;
+    color: $white;
+    font-size: 14px;
+    font-weight: $semi-bold;
+    cursor: pointer;
+    border-radius: 10px;
+
+    span {
+      width: 97px;
+      height: 26px;
+      margin-left: 10px;
+      display: inline-block;
+      background-image: url("../img/whatsapp.png");
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+}
+
+
+.menu__close,
+.menu__whatsapp {
+  display: none;
+}

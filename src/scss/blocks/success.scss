@@ -1,0 +1,26 @@
+.success {
+  display: none;
+  position: relative;
+  z-index: 2;
+  width: 600px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: $blue;
+  background: linear-gradient(to top, #1d93c2, #2b9cc8, #36a2cc);
+  padding: 54px 50px 135px 55px;
+
+  .success__header {
+    width: 280px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: $semi-bold;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

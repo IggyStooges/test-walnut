@@ -1,0 +1,50 @@
+@media (min-width: 320px) and (max-width: 1024px) {
+  .navigation {
+    position: static;
+
+    .navigation__list {
+      flex-direction: column;
+
+      li {
+        margin: 0 0 30px 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.navigation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 640px;
+  top: 85px;
+
+  .navigation__list {
+    @include list-reset;
+    position: relative;
+    z-index: 2;
+    width: 630px;
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-left: 85px;
+    }
+
+    li:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      color: inherit;
+      font-size: 16px;
+      font-weight: 600;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}

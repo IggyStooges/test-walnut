@@ -1,0 +1,118 @@
+.modal {
+  display: none;
+  position: relative;
+  z-index: 2;
+  width: 600px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: linear-gradient(to top, #1d93c2, #2b9cc8, #36a2cc);
+  padding: 54px 41px 54px 46px;
+
+  .modal__header {
+    width: 300px;
+    margin: 0 auto 25px auto;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: $semi-bold;
+    text-align: center;
+  }
+
+  span {
+    display: block;
+  }
+
+  p,
+  span {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    width: 408px;
+    padding: 24px 45px 22px 45px;
+    box-sizing: border-box;
+    background-color: rgba($white, 0.25);
+    color: $white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: $semi-bold;
+  }
+
+  input[type="tel"] {
+    margin-top: 20px;
+  }
+
+  input[type="text"]:hover,
+  input[type="tel"]:hover {
+    background-color: rgba($white, 0.4);
+  }
+
+  input[type="text"]:focus,
+  input[type="tel"]:focus {
+    background-color: rgba($white, 0.4);
+    box-shadow: 0 0 10px rgba($white, 0.4);
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  .modal__submit {
+    @include button-reset;
+    width: 410px;
+    margin: 0 auto;
+    padding: 25px 110px 25px 110px;
+    box-sizing: border-box;
+    display: block;
+    background-color: $dark-gray;
+    color: inherit;
+    font-size: 18px;
+    font-weight: $semi-bold;
+    cursor: pointer;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+
+  .modal__consent {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+  }
+
+  .modal__consent+label {
+    position: relative;
+    flex-direction: row;
+    margin: 0;
+    padding: 40px 0 40px 35px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/checkbox.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  .modal__consent:checked+label {
+    &::before {
+      background-image: url("../img/checked.png");
+    }
+  }
+}

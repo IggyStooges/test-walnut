@@ -1,0 +1,52 @@
+@media (min-width: 320px) and (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+
+    p {
+      margin: 0 0 25px 0;
+
+      &:nth-child(2),
+      &:last-child {
+        margin: 0 0 25px 0;
+        padding: 0;
+      }
+    }
+  }
+
+}
+
+.about {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  font-size: 12px;
+  padding: 0 0 20px 0;
+
+  p {
+
+    &:nth-child(2),
+    &:last-child {
+      margin-left: 90px;
+    }
+  }
+
+  .about__callback,
+  .about__email {
+    display: inline-block;
+    border-bottom: 1px dotted $blue;
+    color: $blue;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+      color: $yellow;
+      border-color: $yellow;
+    }
+  }
+
+  .about__item {
+    span {
+      font-weight: 600;
+    }
+  }
+}
