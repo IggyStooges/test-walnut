@@ -146,7 +146,6 @@
     @include button-reset;
     width: 410px;
     margin: 0 auto;
-    padding: 25px 110px 25px 110px;
     box-sizing: border-box;
     display: block;
     background-color: $blue;
@@ -157,6 +156,8 @@
     cursor: pointer;
 
     a {
+      display: block;
+      padding: 25px 110px 25px 110px;
       color: inherit;
       text-decoration: none;
     }

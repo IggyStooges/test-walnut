@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walnut Test</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <button type="button" class="header__open">
+
+      </button>
+      <div class="header__menu menu">
+        <button class="menu__close"></button>
+        <nav class="menu__navigation navigation">
+          <ul class="navigation__list">
+            <li><a href="achievement.html">Цены</a></li>
+            <li><a href="photos.html">Преимущества</a></li>
+            <li><a href="materials.html">Отзывы </a></li>
+            <li><a href="materials.html">Контакты </a></li>
+          </ul>
+        </nav>
+        <div class="header__about about">
+          <p class="about__item">Снег и лед могут появится неожидано, <span>поэтому мы работаем 24/7</span></p>
+          <p class="about__item">Мы открыты для предложений и идей — <a class="about__email">hello@snow-alp.ru</a></p>
+          <p class="about__item">Мы легко можем позвонить сами — <a class="about__callback" href="#modal">обратный
+              звонок</a></p>
+        </div>
+        <button class="menu__whatsapp">Написать в <span></span></button>
+      </div>
+      <div class="header__middle">
+        <div class="header__logo">
+          <img src="./img/logo.png" alt="logo" width="166" height="36">
+          <span>Чистка снега и наледи с кровли</span>
+        </div>
+        <div class="header__phone">
+          +7 495 <span>335 53 53</span>
+        </div>
+      </div>
+      <h1 class="header__main-header">
+        <span>Очистка снега с крыш</span>
+        <span>промышленными альпинистами от 25 руб/м<sup>2</sup></span>
+      </h1>
+
+      <div class="header__feedback feedback">
+        <form action="POST" class="feedback__form">
+          <span>Оставьте заявку — в течение часа к вам выедет специалист</span>
+          <p class="feedback__inputs">
+            <input type="text" placeholder="Константин Сыромятников" class="feedback__name" pattern="[а-яА-Я ]{2,64}"
+              required>
+            <input type="tel" class="feedback__tel" placeholder="+7(___)___-__-__"
+              pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" required>
+          </p>
+          <p class="feedback__consent">
+            <input type="checkbox" name="consent" id="header-consent" class="feedback__checkbox" required>
+            <label for="header-consent">Я согласен с <a href="confidental.html">политикой конфиденциальности</a> и даю
+              согласие на обработку персональных данных</label>
+          </p>
+          <button type="submit" class="feedback__submit" disabled><a href="#success" class="feedback__success"> Отправить заявку</a></button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="modal" id="modal">
+    <h2 class="modal__header">Заявка на обратный звонок</h2>
+    <form action="POST" class="modal__form">
+      <span>Оставьте заявку и мы перезвоним вам в течение 15 минут</span>
+      <p>
+        <input type="text" placeholder="Константин Сыромятников" class="modal__name" required>
+        <input type="tel" class="modal__tel" placeholder="+7(___)___-__-__" required>
+      </p>
+      <p>
+        <input type="checkbox" name="consent" id="modal-consent" class="modal__consent" required>
+        <label for="modal-consent">Я согласен с <a href="confidental.html">политикой конфиденциальности</a> и даю
+          согласие на обработку персональных данных</label>
+      </p>
+      <button type="submit" class="modal__submit">Перезвоните мне</button>
+    </form>
+  </section>
+
+  <section class="success" id="success">
+    <h2 class="success__header">Заявка успешно отправлена</h2>
+    <p>Спасибо за оставленную заявку, менеджер свяжется с вами в течение 15 минут</p>
+  </section>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
