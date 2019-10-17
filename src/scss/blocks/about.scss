@@ -15,21 +15,23 @@
 
 }
 
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .about {
+    display: flex;
+    font-size: 11px;
+  }
+}
+
 .about {
-  position: relative;
-  z-index: 2;
   display: flex;
   font-size: 12px;
   padding: 0 0 20px 0;
 
   p {
 
-    &:nth-child(2) {
-      margin-left: 65px;
-    }
-    
+    &:nth-child(2),
     &:last-child {
-      margin-left: 90px;
+      margin-left: auto;
     }
   }
 

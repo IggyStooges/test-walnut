@@ -13,11 +13,24 @@
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .navigation {
+    left: 300px;
+    top: 105px;
+
+    .navigation__list {
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 .navigation {
   position: absolute;
   display: flex;
   align-items: center;
-  left: 640px;
+  left: 330px;
   top: 85px;
 
   .navigation__list {

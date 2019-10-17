@@ -36,8 +36,12 @@
 
     .feedback__submit {
       width: 290px;
-      padding: 20px 30px 20px 30px;
-      font-size: 16px;
+
+      a {
+        padding: 20px 30px 20px 30px;
+        font-size: 16px;
+      }
+
     }
   }
 }
@@ -77,14 +81,16 @@
 
     .feedback__submit {
       width: 330px;
-      padding: 20px 90px 20px 85px;
+
+      a {
+        padding: 20px 75px 20px 85px;
+        font-size: 16px;
+      }
     }
   }
 }
 
 .feedback {
-  position: relative;
-  z-index: 2;
   width: 880px;
   margin: 95px auto 0 auto;
 
@@ -114,12 +120,6 @@
     border-radius: 10px;
     font-size: 18px;
     font-weight: $semi-bold;
-  }
-
-  input[type="text"]:invalid,
-  input[type="tel"]:invalid,
-  .feedback__checkbox:invalid+label::before {
-    border: 3px solid red;
   }
 
   input[type="tel"] {

@@ -5,13 +5,17 @@ export default function submitForm() {
 
   inputs.forEach(element => {
     element.addEventListener('change', () => {
+      if (element.validity.patternMismatch) {
+        element.style.border = '2px solid red'
+      }
+
       if (feedbackForm.checkValidity()) {
         submitBtn.disabled = false;
+        submitBtn.addEventListener('click', () => {})
         $('.feedback__success').fancybox({});
       } else {
         submitBtn.disabled = true;
       }
     })
   });
-
 }
