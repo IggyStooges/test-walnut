@@ -58,6 +58,6 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "inputmask": "^4.0.9",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
